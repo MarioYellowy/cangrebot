@@ -7,6 +7,7 @@ mod invite;
 mod krate;
 mod ping;
 mod selftimeout;
+mod showcase;
 mod stats;
 mod suggest;
 mod tts;
@@ -29,6 +30,7 @@ pub fn commands() -> Vec<poise::Command<Data, Error>> {
         suggest::cancelled::sugerencia_cancelada(),
         //stats::send_stats(), TODO: Removed for now
         selftimeout::selftimeout(),
+        showcase::showcase(),
         tts::tts::tts(),
         wipe_commands::wipe_commands(),
         clear::clear(),
